@@ -1,0 +1,13 @@
+//Faça um programa para montar a tabela de
+//multiplicação de números de 1 a 10 (ex.: 1 x 1 = 1, 1 x 2 = 2, etc.)
+int numero = 1;
+int fatorial = 1;        
+while (fatorial <=10 ){
+int v = numero * fatorial;
+System.out.println("1 x " + fatorial + " = " + v);
+fatorial = fatorial + 1;
+          }         
+    }  
+}
+
+
