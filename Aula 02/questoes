@@ -1,5 +1,6 @@
 //Faça um programa para montar a tabela de
 //multiplicação de números de 1 a 10 (ex.: 1 x 1 = 1, 1 x 2 = 2, etc.)
+
 int numero = 1;
 int fatorial = 1;        
 while (fatorial <=10 ){
@@ -7,6 +8,18 @@ int v = numero * fatorial;
 System.out.println("1 x " + fatorial + " = " + v);
 fatorial = fatorial + 1;
           }         
+    }  
+}
+
+//Faça um programa para determinar o número de
+//dígitos de um número informado (sem usar String)
+
+Scanner tec = new Scanner(System.in);
+System.out.println("Entre com qualquer valor");
+String numero = tec.nextLine();
+int letras = numero.length();
+System.out.println("O valor de letras e: "+letras);
+                
     }  
 }
 
