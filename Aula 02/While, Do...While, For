@@ -1,0 +1,43 @@
+package atividade;
+import java.util.Scanner;
+public class Atividade {
+
+    public static void main(String[] args) {
+        
+        //While
+
+        Scanner teclado = new Scanner(System.in);
+        System.out.println("Entre com o numero inteiro positivo:");
+        int numero = teclado.nextInt();
+        long fatorial = 1;
+        while (numero > 0)  {
+            fatorial *= numero--;
+        }
+        System.out.println("o fatorial desse numero e: " + fatorial);
+        
+
+
+        //Do...while
+        
+        Scanner teclado = new Scanner(System.in);
+        System.out.println("Entre com o numero inteiro positivo:");
+        int numero = teclado.nextInt();
+       long fatorial = 1;
+        do{ fatorial *= numero--;
+        }
+        while (numero > 0);
+       System.out.println("o fatorial desse numero e: " + fatorial);
+        
+        //For
+        
+        Scanner teclado = new Scanner(System.in);
+        System.out.println("Entre com o numero inteiro positivo:");
+        int numero = teclado.nextInt();
+        long fatorial = 1;
+        for (int i = 1; i<= numero; i++){
+            fatorial *= i;
+        }
+        System.out.println("o fatorial desse numero e: " + fatorial);
+    }
+    
+}
