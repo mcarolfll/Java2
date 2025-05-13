@@ -3,6 +3,25 @@ import java.util.Scanner;
 public class Atv {
 
 	public static void main(String[] args) {
+		atv2 atv = new atv2();
+
+		atv3 atv3 = new atv3();
+
+		atv.atv2();
+
+		atv3.atv3();	  
+
+		atv4.atv4();	  
+
+			}
+}
+
+
+package Atividade;
+import java.util.Scanner;
+public class Atv {
+
+	public static void main(String[] args) {
 	
 	//1) Faça um algoritmo que leia a idade de uma pessoa expressa em anos, meses e dias e mostre-a expressa em dias. 
 	//Leve em consideração o ano com 365 dias e o mês com 30.
@@ -35,18 +54,62 @@ public class Atv {
 }
 
 
+package Atividade;
+import java.util.Scanner;
+
+public class atv2 {
+	public void atv2() {
+
+//2) Escrever um algoritmo que lê: -
+a porcentagem do IPI a ser acrescido no valor das peças  - o código da peça 1, valor unitário da peça 1, quantidade de peças 1  - 
+//o código da peça 2, valor unitário da peça 2, quantidade de peças 2 O algoritmo deve calcular o valor total a ser pago e apresentar o resultado.
+//Fórmula : (valor1*quant1 + valor2*quant2)*(IPI/100 + 1)
+
+	  Scanner tec = new Scanner (System.in);
+
+	System.out.println("coloque o valor do IPI");
+	int IPI = tec.nextInt();
+	System.out.println("coloque o valor  um");
+
+	int valor1 = tec.nextInt();
+	System.out.println("coloque a quantidade ");
+
+    int quant1 = tec.nextInt();
+	System.out.println("coloque o valor 2 ");
+
+	int valor2 = tec.nextInt();
+	System.out.println("coloque a quantidade");
+
+    int quant2 = tec.nextInt();
+			
+		 double result=(valor1*quant1 + valor2*quant2)*(IPI/100 + 1);
+
+			System.out.println(result);
+}
+}
 
 
+package Atividade;
+import java.util.Scanner;
+
+	public class atv3{
+		
+		public void atv3() {
 
 
-//3) Escreva um algoritmo que exiba 20 vezes a mensagem “Eu, Davi gosto de estudar Algoritmos!”.
-	
+			        
+			//3) Escreva um algoritmo que exiba 20 vezes a mensagem “Eu, Davi gosto de estudar Algoritmos!”.
+			
 
-		 Scanner tec = new Scanner (System.in);
+			 Scanner tec = new Scanner (System.in);
 
-		 for (int i = 1; i<= 20; i++){
-	       
-		        System.out.print("Eu, Davi gosto de estudar Algoritmos!");
-		     
-		        
-		 }
+			 for (int i = 1; i<= 20; i++){
+		      
+			        System.out.print("Eu, Davi gosto de estudar Algoritmos!");
+			     
+			        
+			 }
+          }
+	}
+
+
