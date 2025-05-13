@@ -9,24 +9,25 @@ public class Atv {
 	//(Ex: 3 anos, 2 meses e 15 dias = 1170 dias.)
 		
 		
-		 Scanner tec = new Scanner (System.in);
+         Scanner tec = new Scanner (System.in);
 
-		 int ano= 365;
+		 int idade;
 		 int mes = 30;
 		 int dia;
 		 
-			System.out.print("Digite a idade em anos: ");
-			ano = tec.nextInt();
+			System.out.print("coloque sua idade ");
+			idade = tec.nextInt();
 
-	        System.out.print("Digite a idade em meses: ");
+	        System.out.print("coloque seu mes");
 	        mes = tec.nextInt();
 	        
-	        System.out.print("Digite a idade em dias: ");
+	        System.out.print("coloque os dias ");
 	        dia = tec.nextInt();
 
-	        int totaldias = (ano * 365) + (mes * 30) + dia;
+	        int totaldias = (idade*365)+(mes*30)+dia;
 
 	        System.out.println("A idade em dias é: " + totaldias);
+		
 		
 		
 	}
