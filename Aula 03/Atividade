@@ -113,3 +113,29 @@ import java.util.Scanner;
 	}
 
 
+package Atividade;
+import java.util.Scanner;
+
+public class atv4 {
+	public void atv4() {
+	
+		  //4)  Escreva um algoritmo que leia 20 números do usuário e exiba quantos números são maiores do que 8.
+
+		        Scanner scanner = new Scanner(System.in);
+		        int contador = 0;
+
+		        for (int a = 1; a <= 20; a++) {
+		            System.out.print("Digite o " + a + " número: ");
+		            int numero = scanner.nextInt();
+
+		            if (numero > 8) {
+		                contador++;
+		            }
+		        }
+
+		        System.out.println("Números maiores que 8: " + contador);
+	
+		 
+	}
+}
+
