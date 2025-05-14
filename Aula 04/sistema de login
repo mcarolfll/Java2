@@ -1,0 +1,175 @@
+package Atividade;
+
+public class Atv {
+
+	public static void main(String[] args) {
+		atv2 atv = new atv2();
+
+		atv3 atv3 = new atv3();
+
+		atv4 atv4 = new atv4();
+		
+		atv.atv2();
+
+		atv3.atv3();	  
+
+		atv4.atv4();	  
+
+			}
+}
+
+-------
+
+package Atividade;
+import java.util.Scanner;
+
+public class atv2 {
+	public void atv2() {
+	
+		  Scanner tec = new Scanner (System.in);
+
+			System.out.println("Entre com  seu Nome: ");
+			String nome = tec.nextLine();
+			System.out.println("Entre com o seu E-mail: ");
+			String email = tec.nextLine();
+			System.out.println("Entre com a sua Senha: ");
+			int senha = tec.nextInt();
+			
+	}
+}
+
+-------
+
+package Atividade;
+import java.util.Scanner;
+
+	public class atv3{
+		
+		public void atv3() {
+
+			System.out.println("--------- PRODUTOS ----------");
+		
+			int alternativa ;
+			Scanner tec = new Scanner (System.in);
+			  
+			  
+			  System.out.println("Digite 1 -  Utensílios de Preparo \nDigite 2 -  Corte e Fatiamento \nDigite 3 - Panelas e Cozimento \nDigite 4 - Formas e Assadeiras \nDigite 5 - Acessórios para Massa \nDigite 6 -Serviço e Apoio \nDigite 7 - Bebidas e Café \n");
+			  alternativa = tec.nextInt();
+
+			  if (alternativa == 1) {
+					System.out.println("--- Utensílios de Cozinha ---");
+					System.out.println("1 espátula de silicone");
+					System.out.println("1 colher de pau ou silicone");
+					System.out.println("2 peneiras (uma média e uma pequena)");
+					System.out.println("1 tábua de corte (preferencialmente de vidro, por ser mais higiênica)");
+					System.out.println("1 rolo para abrir massas (plástico ou madeira)");
+					System.out.println("1 pinça");
+					System.out.println("1 ralador");
+					System.out.println("1 funil");
+					System.out.println("1 espremedor de alho");
+					System.out.println("1 escumadeira");
+					System.out.println("1 garfão para preparo de alimentos (especialmente carnes)");
+					System.out.println("1 escorredor de macarrão");
+					System.out.println("1 coador de café");
+					System.out.println("1 chaleira");
+					System.out.println("Formas de gelo (caso sua geladeira não possua)");
+					
+			}
+			  if (alternativa == 2) {
+					System.out.println("--- Medidores e Medidas ---");
+					System.out.println("1 conjunto de medidores");
+					System.out.println("1 xícara de medidas");
+					
+			}
+			  if (alternativa == 3) {
+					System.out.println("--- Facas e Cortes ---");
+					System.out.println("Conjunto de facas:");
+					System.out.println("- Faca grande (para carnes)");
+					System.out.println("- Faca média");
+					System.out.println("- Faca com serra (para pães)");
+					System.out.println("- Faca com ponta fina (para legumes)");
+					System.out.println("1 tesoura");
+					
+			}
+			  if (alternativa == 4) {
+					System.out.println("--- Abertura e Tampas ---");
+					System.out.println("1 saca-rolhas");
+					System.out.println("1 abridor de latas");
+					System.out.println("1 abridor de garrafas");
+					
+			}
+			  if (alternativa == 5) {
+					System.out.println("---  Panelas e Preparação ---");
+					System.out.println("3 panelas (uma média, uma pequena e uma grande)");
+					System.out.println("1 panela de pressão");
+					System.out.println("1 frigideira média antiaderente com tampa");
+					System.out.println("1 leiteira ou caneca para ferver líquidos");
+					
+			}
+			  if (alternativa == 6) {
+					System.out.println("--- Formas para Forno ---");
+					System.out.println("2 formas para pizza");
+					System.out.println("1 forma retangular");
+					System.out.println("1 forma redonda");
+					System.out.println("1 forma redonda com furo no meio");
+					
+			}
+			   if(alternativa == 7){
+					System.out.println("Servir e Manipular ");
+					System.out.println("2 conchas (uma grande, uma média)");
+					System.out.println("2 pegadores de panela");
+					System.out.println("1 luva de silicone");
+				}
+				
+
+			   
+			   
+          }
+	}
+
+
+---------
+
+package Atividade;
+import java.util.Scanner;
+
+public class atv4 {
+	public void atv4() {
+	
+		 Scanner tec = new Scanner (System.in);
+		
+		 int alternativa ;
+         int valor=0;
+		 
+		  System.out.println("--- Forma de Pagamento ---");
+		  System.out.println("Digite 4 - Débito, Digite 5 - Crédito, Digite 6 - Pix, Digite 7 - Boleto");
+			alternativa = tec.nextInt();
+
+		            if (alternativa == 4) {
+		    			System.out.println("Informe o valor ");
+		    			 valor = tec.nextInt();
+
+		    	}
+		            if (alternativa == 5) {
+		    			System.out.println("Informe o valor ");
+		    			 valor =tec.nextInt();
+
+		    	}
+
+		            if (alternativa == 6) {
+		    			System.out.println("Informe o valor ");
+		    			 valor =tec.nextInt();
+
+		    	} 
+		            else if(alternativa == 7){
+		    		System.out.println("Informe o valor ");
+		    	valor = tec.nextInt();
+		    		
+		    		}
+
+		    	
+		            
+					System.out.println("Pagamento de R$ " +valor + " via " + alternativa  );
+	}
+			 }
+	
