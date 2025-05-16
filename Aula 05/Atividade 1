@@ -1,0 +1,136 @@
+package atv5;
+import java.util.Scanner;
+
+
+public class quest1 {
+     
+	public void converter() {
+		Scanner tec = new Scanner(System.in);
+System.out.println("Coloque uma grandeza em metros: ");
+double metro = tec.nextDouble();
+double cm = metro*100;
+System.out.println("Sua grandeza em centímetros é: "+cm+"cm");
+
+	}
+}
+
+------------
+
+package atv5;
+import java.util.Scanner;
+
+public class quest2 {
+   public void sal() {
+		Scanner tec = new Scanner(System.in);
+        System.out.println("Para começarmos, insira o seu salário base: ");
+        double sb = tec.nextDouble();
+        double imposto = sb*0.21;
+        double gratificacao = sb*0.10;
+        System.out.println("O valor do imposto que você vai pagar é: "+ imposto + " e o valor da gratificação que você vai receber é " + gratificacao);
+        double total = (sb+gratificacao)-imposto;
+        System.out.println("O salário total com imposto e gratificação é: "+total);
+   }
+}
+
+------------
+
+package atv5;
+import java.util.Scanner; 
+public class main {
+
+	public static void main(String[] args) {
+		// TODO Auto-generated method stub
+		
+
+		int valor1 = 2024;
+		int valor2;
+		
+		Scanner tec = new Scanner (System.in);
+		System.out.println("Entre com o seu ano de nascimento:");
+		valor2 = tec.nextInt();
+
+		int total = valor1 - valor2;
+		
+		
+		if (total >= 16) {
+			System.out.println("Você pode votar");
+		}
+		else {
+			System.out.println("Você não pode votar");
+		}
+		
+	}
+	}
+
+
+------------
+
+package atv5;
+import java.util.Scanner;
+
+public class quest4 {
+     public void emprestimo() {
+			Scanner tec = new Scanner(System.in);
+            System.out.println("Para solicitar o emprestimo antes, coloque o seu salário");
+            double salario = tec.nextDouble();
+            System.out.println("Qual o valor da prestação? ");
+            double presta = tec.nextDouble();
+            if (presta> (salario*0.15)) {
+				System.out.println("Esse emprestimo não pode ser concebido");
+			} else {
+System.out.println("Esse emprestimo foi concluido");
+			}
+     }
+}
+
+------------
+
+package atv5;
+import java.util.Scanner;
+
+public class quest5 {
+    public void hora() {
+		Scanner tec = new Scanner(System.in);
+       System.out.println("Insira a quantidade de horas trabalhadas no mês:");
+       int hora = tec.nextInt();
+       System.out.println("Insira quanto você recebe por hora:");
+       double sph = tec.nextDouble();
+       double ho = hora/4;
+       if (ho>40) {
+		double extra = ho-40;
+		double sla = ho - extra;
+		double salario40 = extra*sph+(sph*0.50);
+		double total1 = salario40*4+ sla; 
+		System.out.println("O salario total foi de "+total1);
+	} else {
+		double total = hora*sph;
+		System.out.println("O salario total foi de: "+total);
+
+	}
+    }
+}
+
+------------
+
+package atv5;
+import java.util.Scanner;
+
+public class quest6 {
+   public void prod() {
+		Scanner tec = new Scanner(System.in);
+System.out.println("Qual seu salario fixo");
+double sf = tec.nextDouble();
+System.out.println("Qual o valor de vendas total");
+double vt = tec.nextDouble();
+if (vt<=1500) {
+	double st = sf+(vt*0.07);
+	System.out.println("O salário total é: "+st);
+	
+} else {
+	double sla = vt-1500;
+	double sl = 1500 - vt;
+	 double st = sf+((sla*0.03)+(sl*0.07));
+	 System.out.println("O salário total é de: "+st);
+}
+   }
+}
