@@ -1,0 +1,19 @@
+package Main;
+import java.util.Scanner;
+public class questao3 {
+
+	public static void main(String[] args) {
+
+	
+	Scanner tec = new Scanner(System.in);
+	
+
+    System.out.println("Insira o valor do carro de fabrica");
+    double valor = tec.nextDouble();
+    double dist = (valor * 0.28)+valor;
+    double total = (valor * 0.45)+dist;
+    System.out.println("O valor total do carro na distribuidora é: "+total);
+	
+	}
+
+}
