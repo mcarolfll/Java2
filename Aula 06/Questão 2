@@ -1,6 +1,14 @@
-Scanner tec = new Scanner(System.in);
+package Main;
+import java.util.Scanner;
+public class questao2 {
+
+	public static void main(String[] args) {
+
 	
+		
+	Scanner tec = new Scanner(System.in);
 	
+
 	System.out.println("Entre com um numero: ");
 		int numero = tec.nextInt();
 		
@@ -22,5 +30,8 @@ Scanner tec = new Scanner(System.in);
 				}
 		}
 	
-
+	
+	
+	
 	}
+
