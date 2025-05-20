@@ -1,0 +1,26 @@
+Scanner tec = new Scanner(System.in);
+	
+	
+	System.out.println("Entre com um numero: ");
+		int numero = tec.nextInt();
+		
+		switch (numero) {
+		case  1: {
+			System.out.println("entrar");
+			break;
+		}
+		case  2: {
+			System.out.println("entrar");
+			break;
+		}
+		case  3: {
+			System.out.println("entrar");
+			break;
+		}
+			default:
+				System.out.println("invalido ");
+				}
+		}
+	
+
+	}
