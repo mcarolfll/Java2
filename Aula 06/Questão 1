@@ -1,0 +1,73 @@
+package Main;
+
+import java.util.Scanner;
+
+public class Main {
+
+	public static void main(String[] args) {
+		
+
+		Scanner tec = new Scanner(System.in);
+		
+		System.out.println("Entre com o numero 1: ");
+		int n1 = tec.nextInt();
+		System.out.println("Entre com o numero 2: ");
+		int n2 = tec.nextInt();
+		
+		if (n1 == n2  ) {
+			  System.out.print(" o numero 1 e igual ao 2 ");
+	           
+		} 
+		if (n1 != n2  ) {
+			  System.out.print(" o numero 1 nao e igual 2 ");
+	           
+		} 
+		if (n1 > n2  ) {
+			  System.out.print(" o numero 1 e maior que o numero 2 ");
+	           
+		} 
+		if (n1 < n2  ) {
+			  System.out.print(" o numero 1 ne menor que o numero 2 ");
+	           
+		} 
+		if (n1 >= n2  ) {
+			  System.out.print(" o numero 1 e maior igual que o numero  2 ");
+	           
+		} 
+		if (n1 <= n2  ) {
+			  System.out.print(" o numero 1 e menor igual que o numero 2 ");
+	           
+		} 
+		
+		System.out.println("-----------------------------------");
+		
+		if (n2 == n1  ) {
+			  System.out.print(" o numero 1 e igual ao 2 ");
+	           
+		} 
+		if (n2 != n1 ) {
+			  System.out.print(" o numero 1 nao e igual 2 ");
+	           
+		} 
+		if (n2 > n1  ) {
+			  System.out.print(" o numero 1 e maior que o numero 2 ");
+	           
+		} 
+		if (n2 < n1 ) {
+			  System.out.print(" o numero 1 ne menor que o numero 2 ");
+	           
+		} 
+		if (n2 >= n1  ) {
+			  System.out.print(" o numero 1 e maior igual que o numero  2 ");
+	           
+		} 
+		if (n2 <= n1  ) {
+			  System.out.print(" o numero 1 e menor igual que o numero 2 ");
+	           
+		} 
+		
+		
+		
+	}
+
+}
