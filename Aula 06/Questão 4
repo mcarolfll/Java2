@@ -1,0 +1,31 @@
+package Main;
+import java.util.Scanner;
+public class questao4 {
+
+	public static void main(String[] args) {
+		
+		Scanner tec = new Scanner(System.in);
+		
+		  System.out.println("deposite uma quantia");
+	        double q1 = tec.nextDouble();
+	        System.out.println("Você quer 1 = Sacar, 2= obter saldo?");
+	        int v = tec.nextInt();
+	        if (v == 1) {
+	             if (q1 == 1) {
+	            System.out.println("Qual o valor que você quer saltar");
+	            double s1 = tec.nextDouble();
+	            if (s1 > q1) {
+	                System.out.println("Valor mais alto que o possuido");
+	            } else{
+	                {
+	                double imposto = s1 * 0.05; 
+	                q1 = (s1 + imposto); 
+	                System.out.println("Valor sacado com sucesso! Saldo restante: " + q1);
+	             
+	                    }
+	        }
+	       
+	}
+
+}
+}}
