@@ -1,0 +1,36 @@
+package aula07;
+import java.util.Scanner;
+public class questao5 {
+
+	public static void main(String[] args) {
+		
+		Scanner tec = new Scanner(System.in);
+		
+		System.out.println("Para começar, insira o nome do livro");
+        String nome = tec.nextLine();
+        System.out.println("Qual o nome do autor?");
+        String autor = tec.nextLine();
+        System.out.println("Quantidade de paginas");
+        int pag = tec.nextInt();
+        System.out.println("Qual o estoque do livro?");
+                int estoque = tec.nextInt();
+        System.out.println("Para emprestar o livro, tecle 1,  para devolver, tecle 2, para ver estoque, tecle 3");
+        int t = tec.nextInt();
+        if (t == 1) {
+            System.out.println("Ok, para isso, temos que ver se está disponivel ");
+            if (estoque == 1) {
+                System.out.println("Livro emprestado, o estoque agora é 0");
+                estoque = estoque - 1;
+            }
+        } if (t == 2) {
+            if (estoque == 0) {
+                System.out.println("Livro devolvido com sucesso");
+                estoque = estoque+1;
+        }
+        } if (t == 3) {
+            System.out.println("O estoque do livro é: "+estoque);
+        }
+
+	}
+
+}
