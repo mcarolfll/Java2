@@ -1,0 +1,27 @@
+package aula07;
+
+import java.util.Scanner;
+
+public class main {
+
+	public static void main(String[] args) {
+		
+
+		Scanner tec = new Scanner(System.in);
+		
+		System.out.println("Entre com o valor do raio: ");
+		double raio = tec.nextDouble();
+		double pi = 3.14;
+		double area = pi *(raio*raio);
+		System.out.println("A área do circulo é "+area);
+        System.out.println("o perímetro: ");
+        double p = 2 * pi * raio;
+        System.out.println("O valor do perímetro: "+p);
+		
+	        
+		
+	}
+
+	
+
+}
