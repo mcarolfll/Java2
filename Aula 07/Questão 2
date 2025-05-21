@@ -1,0 +1,22 @@
+package aula07;
+import java.util.Scanner;
+public class questao2 {
+
+	public static void main(String[] args) {
+		// TODO Auto-generated method stub
+
+		Scanner tec = new Scanner(System.in);
+		
+		
+		System.out.print("Adicione a largura desejada: ");
+		int larg = tec.nextInt();
+		System.out.print("Adicione o altura desejado: ");
+		int alt = tec.nextInt();
+
+		double area = (larg*alt);
+		double perimetro = 2*(alt + larg);
+
+		System.out.println("Resultado: " +perimetro);
+
+
+}}
