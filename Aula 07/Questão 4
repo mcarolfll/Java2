@@ -1,0 +1,22 @@
+package aula07;
+import java.util.Scanner;
+public class questao4 {
+
+	public static void main(String[] args) {
+		
+		Scanner tec = new Scanner(System.in);
+		
+		System.out.println("qual o seu nome:");
+		String nome = tec.nextLine();
+		System.out.println("qual a sua idade:");
+		String idade = tec.nextLine();
+		System.out.println("quantas vezes voce foi consultado");
+		int cons = tec.nextInt();
+		cons= cons+1;
+	
+	    System.out.println("o número de consultas agora é: "+cons);
+		
+		
+	}
+
+}
