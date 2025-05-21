@@ -1,0 +1,38 @@
+package aula07;
+import java.util.Scanner;
+public class questao3 {
+
+	public static void main(String[] args) {
+		
+		Scanner tec = new Scanner(System.in);
+		double n1, n2,n3, n4, media1;
+		 
+		System.out.println("Entre com o seu nome: ");
+		String nome = tec.nextLine();
+		System.out.println("Entre com a sua matricula: ");
+		int matricula = tec.nextInt();
+		
+		  
+	       System.out.println("Entre com N1");
+	       n1 = tec.nextDouble();
+	       System.out.println("Entre com N2");
+	       n2 = tec.nextDouble();
+	       System.out.println("Entre com N3");
+	       n3 = tec.nextDouble();
+	       System.out.println("Entre com N4");
+	       n4 = tec.nextDouble();
+	       media1 = (n1+n2+n3+n4)/2;
+	       System.out.println("---------");
+	       System.out.println(media1);
+	       System.out.println("---------");
+	       if (media1 > 7) {
+	           System.out.println("Aprovado");
+	           
+	       } else {
+	           
+	           System.out.println("Reprovado");
+	       }
+
+	}
+
+}
